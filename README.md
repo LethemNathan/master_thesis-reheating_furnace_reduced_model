@@ -51,6 +51,9 @@ temperatures converge.
 
 ## Important notes
 
+- Keep the `Functions/` folder in the same project directory as the main MATLAB
+  scripts. The setup script adds this folder to the MATLAB path so that the
+  required functions are available during execution.
 - Run the scripts in the **same MATLAB session**. Later scripts reuse variables
   from the setup script and do not create them again.
 - Option B needs `S` and `exchOpts`, which come from
