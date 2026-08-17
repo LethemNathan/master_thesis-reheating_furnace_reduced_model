@@ -35,7 +35,7 @@ markerFile = 'input/nonParticipatingMedia.msh';
 solveWalls = false;
 
 % Zone, slab, physical-constant, and wall definitions
-run('input/subZonesDefinitionNew1.m');
+run('input/subZonesDefinition.m');
 
 slabsBbox = containers.Map( ...
     'KeyType', 'int32', ...
@@ -43,7 +43,7 @@ slabsBbox = containers.Map( ...
 
 run('input/bramestoreSlab.m');
 run('input/physicalConstant.m');
-run('wallDataFurnace_Generation.m');
+run('input/wallDataFurnace_Generation.m');
 
 
 %% ========================================================================
