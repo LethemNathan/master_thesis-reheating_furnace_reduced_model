@@ -262,7 +262,7 @@ zoneEnergyOpts = struct( ...
 radFields.T = T_init * ones( ...
     numel(mesh.cells.id), 1);
 
-load('input/postprocZones_New1.mat');
+load('input/postprocZones.mat');
 
 zoneFields.T = postprocZones(:,2);
 
@@ -271,7 +271,7 @@ radFields = assign_zone_temperature_to_radFields( ...
 
 
 % Reference wall and skid data
-load('input/extWallReport_New1.mat');
+load('input/extWallReport.mat');
 load('input/skid.mat');
 
 Twall_zone_table = build_Twall_zone_table_from_reports( ...
@@ -289,7 +289,7 @@ Twall_zone_table('412_17') = 1483.6707;
 
 
 % Inter-zone flow data
-load('input/intSurfReport2.mat');
+load('input/intSurfReport.mat');
 
 
 %% ========================================================================
