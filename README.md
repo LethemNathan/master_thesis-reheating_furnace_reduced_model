@@ -65,15 +65,15 @@ All input files are expected in the `input/` folder.
 - `input/gmsh_reheating_furnace.msh` – main furnace mesh
 - `input/nonParticipatingMedia.msh` – markers for non-participating media
 **Definition scripts (run inside the setup)**
-- `input/subZonesDefinitionNew1.m`
+- `input/subZonesDefinition.m`
 - `input/bramestoreSlab.m`
 - `input/physicalConstant.m`
 - `input/wallDataFurnace_Generation.m`
 **Data files (.mat)**
-- `input/postprocZones_New1.mat` – zone temperatures
-- `input/extWallReport_New1.mat` – external wall report
+- `input/postprocZones.mat` – zone temperatures
+- `input/extWallReport.mat` – external wall report
 - `input/skid.mat` – skid data
-- `input/intSurfReport2.mat` – inter-zone flow data
+- `input/intSurfReport.mat` – inter-zone flow data
 ## Main parameters (set in `full_Model_Setup.m`)
  
 - Angular quadrature: `Nth = 4`, `Nph = 8`
