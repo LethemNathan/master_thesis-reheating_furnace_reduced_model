@@ -1,0 +1,1 @@
+fichiers-lourds/** filter=lfs diff=lfs merge=lfs -text
